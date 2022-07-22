@@ -8,19 +8,27 @@ namespace Task_OOP
 {
     public class Boxs
     {
-        private Guid idBox;                                 //id паллеты
-        private double widthBox;                            //ширина паллеты
-        private double heightBox;                           //высота паллеты
-        private double depthBox;                            //глубина паллеты
-        private double weightBox;                           //вес паллеты
+        private Guid boxId;                                   //id коробки
+        private double boxWidth;                              //ширина коробки
+        private double boxHeight;                             //высота коробки
+        private double boxDepth;                              //глубина коробки
+        private double boxWeight;                             //вес коробки
 
-        public static DateTime DateOfManufacture { get; set; }   //дата производства
-        public static DateTime ExpirationDate { get; set; }      //срок годности
+        public  DateTime DateOfManufactureBox { get; set; }   //дата производства коробки
+        public DateTime ExpirationDateBox { get; set; }       //срок годности коробки
+        public double VolumeBox { get; set; }                 //объем коробки
 
 
-        public static void СalculationExpirationDate()           //вычисление срока годности
+
+        public void СalculationVolumeBox()                    //вычисление объема коробки
+         {
+             VolumeBox = boxWidth * boxHeight * boxDepth;
+             //Console.WriteLine(VolumeBox);
+             return;
+         }
+        public void СalculationExpirationDateBox()            //вычисление срока годности коробки
         {
-            ExpirationDate = DateOfManufacture.AddDays(100);
+            ExpirationDateBox = DateOfManufactureBox.AddDays(100);
             //Console.WriteLine(ExpirationDate);
             return;
         }

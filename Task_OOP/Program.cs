@@ -10,8 +10,10 @@ namespace Task_OOP
     {
         static void Main(string[] args)
         {
-            Boxs.DateOfManufacture = new DateTime(2022, 01, 01);
-            Boxs.СalculationExpirationDate();
+            Boxs boxs = new();
+            boxs.DateOfManufactureBox = new DateTime(2022, 01, 01);
+            boxs.СalculationExpirationDateBox();
+            boxs.СalculationVolumeBox();
 
         }
     }
