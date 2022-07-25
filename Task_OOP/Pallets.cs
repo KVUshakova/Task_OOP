@@ -25,7 +25,7 @@ namespace Task_OOP
 
         public void СalculationVolumePallet()                    //вычисление объема коробки
         {
-            VolumePallet = VolumeBox.
+            //VolumePallet = VolumeBox.           дописать
             //Console.WriteLine(VolumeBox);
             return;
         }
