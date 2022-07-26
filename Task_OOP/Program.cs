@@ -10,10 +10,13 @@ namespace Task_OOP
     {
         static void Main(string[] args)
         {
-            Boxs boxs = new();
-            boxs.DateOfManufactureBox = new DateTime(2022, 01, 01);
-            boxs.СalculationExpirationDateBox();
-            boxs.СalculationVolumeBox();
+            Box box = new();
+            box.DateOfManufacture = new DateTime(2022, 01, 01);
+            box.СalculationExpirationDateBox();
+
+            Pallet pallet = new();
+            Console.WriteLine(pallet.ExpirationDatePallet);
+
 
         }
     }

@@ -1,28 +1,28 @@
 ﻿[
-    {
-        "palletId": "9ec41765-cc6e-4a5b-8280-df5e93626ba2",
-        "palletWidth": 40,
-        "palletHeight": 20,
-        "palletDepth": 20,
-        "ExpirationDatePallets": "2022-06-01T00:00:00",
-        "palletWeight": 20,
-        "boxs": [
-            {
-                "boxId": "e49a594c-1eb9-4287-8f55-5fe4698c12a6",
-                "boxWidth": 20,
-                "boxHeight": 10,
-                "boxDepth": 10,
-                "boxWeight": 10,
-                "ExpirationDateBox": "2022-07-01T00:00:00"
-            },
-            {
-                "boxId": "96cdeaa0-f56d-47a0-a581-055cbb67d640",
-                "boxWidth": 20,
-                "boxHeight": 10,
-                "boxDepth": 10,
-                "boxWeight": 10,
-                "ExpirationDateBox": "2022-07-01T00:00:00"
-            }
-        ]
-    }
+  {
+    "id": "9ec41765-cc6e-4a5b-8280-df5e93626ba2",
+    "width": 40,
+    "height": 20,
+    "depth": 20,
+    "ExpirationDatePallet": "2022-06-01T00:00:00",
+    "weight": 20,
+    "boxes": [
+      {
+        "id": "e49a594c-1eb9-4287-8f55-5fe4698c12a6",
+        "width": 20,
+        "height": 10,
+        "depth": 10,
+        "weight": 10,
+        "ExpirationDateBox": "2022-07-01T00:00:00"
+      },
+      {
+        "id": "96cdeaa0-f56d-47a0-a581-055cbb67d640",
+        "width": 20,
+        "height": 10,
+        "depth": 10,
+        "weight": 10,
+        "ExpirationDateBox": "2022-07-01T00:00:00"
+      }
+    ]
+  }
 ]

@@ -6,31 +6,24 @@ using System.Threading.Tasks;
 
 namespace Task_OOP
 {
-    public class Boxs
+    public class Box
     {
-        private Guid boxId;                                   //id коробки
-        private double boxWidth;                              //ширина коробки
-        private double boxHeight;                             //высота коробки
-        private double boxDepth;                              //глубина коробки
-        private double boxWeight;                             //вес коробки
-
-        public  DateTime DateOfManufactureBox { get; set; }   //дата производства коробки
+        private Guid id;
+        private double width;
+        private double height;                             
+        private double depth;
+        private double weight;
+        public  DateTime DateOfManufacture { get; set; }   //дата производства коробки
         public DateTime ExpirationDateBox { get; set; }       //срок годности коробки
-        public double VolumeBox { get; set; }                 //объем коробки
+        public double Volume
+        {
+            get { return width * height * depth; }
+        }
 
-
-
-        public void СalculationVolumeBox()                    //вычисление объема коробки
-         {
-             VolumeBox = boxWidth * boxHeight * boxDepth;
-             //Console.WriteLine(VolumeBox);
-             return;
-         }
         public void СalculationExpirationDateBox()            //вычисление срока годности коробки
         {
-            ExpirationDateBox = DateOfManufactureBox.AddDays(100);
+            ExpirationDateBox = DateOfManufacture.AddDays(100);
             //Console.WriteLine(ExpirationDate);
-            return;
         }
     }
 

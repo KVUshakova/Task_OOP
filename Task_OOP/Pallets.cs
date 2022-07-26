@@ -6,30 +6,20 @@ using System.Threading.Tasks;
 
 namespace Task_OOP
 {
-    public class Pallets : Boxs
-    {
-        private Guid palletId;                                   //id паллеты
-        private double palletWidth;                              //ширина паллеты
-        private double palletHeight;                             //высота паллеты
-        private double palletDepth;                              //глубина паллеты
-        private double palletWeight;                             //вес паллеты
-
-        private DateTime expirationDatePallets;
-        
-        public DateTime ExpirationDatePallets
+    public class Pallet : Box
+    { 
+    //{
+    //    private Guid id;                                   
+    //    private double width;                             
+    //    private double height;                            
+    //    private double depth;                             
+    //    private double weight;                                   
+        public DateTime ExpirationDatePallet
         {
-            get { return /*дописать*/ }
+            get { return boxes.Min(a => a.ExpirationDateBox); }
+            
         }
-
-        public double VolumePallet { get; set; }
-
-        public void СalculationVolumePallet()                    //вычисление объема коробки
-        {
-            //VolumePallet = VolumeBox.           дописать
-            //Console.WriteLine(VolumeBox);
-            return;
-        }
-
+        public List<Box> boxes { get; set; }
 
 
     }
