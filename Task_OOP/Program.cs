@@ -12,8 +12,6 @@ namespace Task_OOP
         {
             Box box = new();
             box.DateOfManufacture = new DateTime(2022, 01, 01);
-            box.СalculationExpirationDateBox();
-
             Pallet pallet = new();
             Console.WriteLine(pallet.ExpirationDatePallet);
 

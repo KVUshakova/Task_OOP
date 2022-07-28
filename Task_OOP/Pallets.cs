@@ -7,19 +7,23 @@ using System.Threading.Tasks;
 namespace Task_OOP
 {
     public class Pallet : Box
-    { 
-    //{
-    //    private Guid id;                                   
-    //    private double width;                             
-    //    private double height;                            
-    //    private double depth;                             
-    //    private double weight;                                   
+    {                                    
         public DateTime ExpirationDatePallet
         {
-            get { return boxes.Min(a => a.ExpirationDateBox); }
+            get { return Boxes.Min(e => e.ExpirationDateBox); }
             
         }
-        public List<Box> boxes { get; set; }
+
+        public double Weight
+        {
+            get { return Boxes.Sum(w => w.Weight) + 30; ; }
+        }
+
+        public List<Box> Boxes { get; set; }
+
+        public double Volume => (Width * Height * Depth) + Boxes.Sum(v => v.Volume);
+
+
 
 
     }
